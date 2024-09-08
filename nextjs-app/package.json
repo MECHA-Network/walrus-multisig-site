@@ -21,7 +21,6 @@
   "scripts": {
     "analyze": "cross-env ANALYZE=true next build",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "dev": "next dev",
     "format": "prettier -w \"src/*/*.{tsx,ts,js,jsx,css}\"",
     "lint": "next lint",
@@ -62,7 +61,7 @@
     "eslint-plugin-tailwindcss": "^3.13.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
-    "next-sitemap": "^4.1.8",
+
     "next-transpile-modules": "^9.0.0",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
