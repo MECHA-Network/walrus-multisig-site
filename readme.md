@@ -1,4 +1,4 @@
-# Host Next JS website using Walrus
+# Walrus MultiSig DAO Website
 
 ### Install and setup Walrus
 - Download and setup walrus binary:

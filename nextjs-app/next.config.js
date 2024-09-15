@@ -12,7 +12,7 @@ const nextConfig = {
   experimental: {},
   output: 'export',
   // Optional: Change the output directory
-  distDir: '../walrus-sites-main/out'
+  // distDir: '../walrus-sites-main/out'
 };
 
 const nextPlugins = [

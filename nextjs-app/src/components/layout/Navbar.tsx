@@ -1,7 +1,10 @@
+"use client";
 import { cn } from '@/lib/utils';
 
 import Image from "next/image";
 import MenuWrapper from './MenuWrapper';
+import { ConnectButton } from '@mysten/dapp-kit';
+
 
 const Navbar = ({ className }: { className?: string }) => {
   return (
@@ -21,7 +24,9 @@ const Navbar = ({ className }: { className?: string }) => {
         height={24}
         priority
       />
-      
+
+      <ConnectButton />
+
       <MenuWrapper />
     </nav>
   );
