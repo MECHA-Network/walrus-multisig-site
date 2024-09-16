@@ -16,18 +16,18 @@ const Navbar = ({ className }: { className?: string }) => {
       )}
     >
       {/* <NetworkSwitch /> */}
-      <Image
+      {/* <Image
         src="/vercel.svg"
         alt="Vercel Logo"
         className="dark:invert"
         width={100}
         height={24}
         priority
-      />
+      /> */}
 
-      <ConnectButton />
+      {/* <ConnectButton /> */}
 
-      <MenuWrapper />
+      {/* <MenuWrapper /> */}
     </nav>
   );
 };
