@@ -1,41 +1,14 @@
-import "./footer.css"
-import { XIcon, TelegramIcon, LinkedInIcon } from "../icons";
+import "./footer.css";
 export const Footer = () => {
-    return (
-      <footer>
-        <div className="waves">
-          <div className="wave" id="wave1"></div>
-          <div className="wave" id="wave2"></div>
-          <div className="wave" id="wave3"></div>
-          <div className="wave" id="wave4"></div>
-        </div>
-        <ul className="social_icon">
-          <li>
-            <a href="#">
-              <XIcon />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <LinkedInIcon />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <TelegramIcon />
-            </a>
-          </li>
-        </ul>
+  return (
+    <>
+     <footer className="footer footer-center bg-black text-white inset-x-0 bottom-0 w-full p-10">
+  <aside>
+    <p>Copyright © {new Date().getFullYear()} - All right reserved by Dolphin DAO</p>
+  </aside>
+</footer>
 
-        <ul className="menu">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-        </ul>
-        <p>&copy; {new Date().getFullYear()} ABC | All Rights Reserved</p>
-      </footer>
-    );
-}
+    </>
+
+  );
+};
