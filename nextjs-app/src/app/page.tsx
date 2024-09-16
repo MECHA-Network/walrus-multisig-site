@@ -6,14 +6,14 @@ import { useEffect, useRef, useState } from "react";
 import { FaUsers, FaShieldAlt, FaVoteYea, FaCogs } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-import { ConnectButton, useAccounts, useSignAndExecuteTransaction, useSuiClient } from "@mysten/dapp-kit";
-import { Transaction } from "@mysten/sui/transactions";
+import {useSuiClient } from "@mysten/dapp-kit";
+// import { Transaction } from "@mysten/sui/transactions";
 
 export default function Home() {
   const suiClient = useSuiClient();
   const mainRef = useRef<HTMLDivElement | null>(null);
   const [proposallist, setProposallist] = useState<any[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  // const [loading, setLoading] = useState<boolean>(true);
   const [allProposal, setAllProposal] = useState<any[]>([]);
   interface Feature {
     title: string;
@@ -21,13 +21,13 @@ export default function Home() {
     icon: JSX.Element;
   }
 
-  interface Proposal {
-    proposalId: string;
-    proposalName: string;
-    minThreshold: number;
-    currentVoteWeight: number;
-    lastVotingTime: string;
-  }
+  // interface Proposal {
+  //   proposalId: string;
+  //   proposalName: string;
+  //   minThreshold: number;
+  //   currentVoteWeight: number;
+  //   lastVotingTime: string;
+  // }
 
   // const proposals: Proposal[] = [
   //   {
@@ -96,7 +96,7 @@ export default function Home() {
           showDisplay: true,
           showOwner: true,
         },
-      });
+      }) as any;
 
       const dynamicContentLinks = await suiClient.getDynamicFields({
         parentId: proposal_details.data?.content?.fields?.list?.fields?.id?.id,
@@ -122,17 +122,17 @@ export default function Home() {
             showDisplay: true,
             showOwner: true,
           },
-        });
+        }) as any;
         new_proposal.push(single_proposal?.data?.content?.fields?.value?.fields);
       };
 
       setAllProposal(new_proposal);
 
-      setLoading(false);
+      // setLoading(false);
       
     } catch (error) {
       console.error("Error fetching proposals:", error);
-      setLoading(false); 
+      // setLoading(false); 
     }
   };
 

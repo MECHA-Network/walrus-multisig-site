@@ -1,10 +1,6 @@
 "use client";
 import { cn } from '@/lib/utils';
 
-import Image from "next/image";
-import MenuWrapper from './MenuWrapper';
-import { ConnectButton } from '@mysten/dapp-kit';
-
 
 const Navbar = ({ className }: { className?: string }) => {
   return (
