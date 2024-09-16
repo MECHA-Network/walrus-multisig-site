@@ -28,6 +28,7 @@
     "tsc": "tsc --pretty --noEmit"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.5",
     "@mysten/dapp-kit": "^0.14.21",
     "@mysten/sui": "^1.9.0",
     "@radix-ui/react-switch": "^1.1.0",
