@@ -71,8 +71,8 @@ export default function Home() {
       icon: <FaUsers />
     },
     {
-      title: 'Automated Processes',
-      description: 'Smart contracts ensure that everything runs smoothly and autonomously.',
+      title: 'Robust Decentralized Storage',
+      description: 'Used Walrus for its robust fault tolerance and efficient data availability verification, even under extreme conditions.',
       icon: <FaCogs />
     }
   ];
